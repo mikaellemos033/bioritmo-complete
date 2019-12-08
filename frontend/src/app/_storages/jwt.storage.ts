@@ -1,0 +1,1 @@
+export const JwtStorage = 'JWT_TOKEN';

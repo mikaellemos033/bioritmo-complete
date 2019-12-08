@@ -1,0 +1,15 @@
+<section class="container">
+  <form #frm="ngForm" [formGroup]="frmGroup" (ngSubmit)="frm.valid && onSubmit()">
+    <div class="form-group">
+      <label for="">cidade</label>
+      <input type="text" class="form-control" formControlName="city" [ngClass]="{ 'invalid': frm.submitted && f.city.errors }">
+    </div>
+
+    <div class="form-group">
+      <label >pais</label>
+      <input type="text" maxlength="2" class="form-control" formControlName="country" [ngClass]="{ 'invalid': frm.submitted && f.country.errors }">
+    </div>
+
+    <button class="btn btn-primary">pesquisar</button>
+  </form>
+</section>

@@ -1,0 +1,35 @@
+<div class="city">
+
+
+<h1>Weather for {{_city.city}}</h1>
+<p><a href="javascript:;" (click)="save()" *ngIf="!_city.id">Save</a> <a href="javascript:;" (click)="delete()" *ngIf="_city.id">delete</a></p>
+<h2>{{_city.temperature.temperature.celsius}}&ordm;C</h2>
+<h2>{{_city.temperature.temperature.kelvin}}&ordm;K</h2>
+<h2>{{_city.temperature.temperature.fahrenheit}}&ordm;C</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Pressure</td>
+      <td>{{ _city.temperature.pressure }}hpa</td>
+    </tr>
+    <tr>
+      <td>Humidity</td>
+      <td>{{ _city.temperature.humidity }}%</td>
+    </tr>
+    <tr>
+      <td>Min Temperature</td>
+      <td>{{ _city.temperature.min_temperature }}&ordm;C</td>
+    </tr>
+    <tr>
+      <td>Max Temperature</td>
+      <td>{{ _city.temperature.max_temperature }}&ordm;C</td>
+    </tr>
+    <tr>
+      <td>Wind Speed</td>
+      <td>{{ _city.temperature.wind_speed }}mi/h</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>

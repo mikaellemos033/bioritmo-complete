@@ -1,0 +1,15 @@
+<section class="container">
+  <form #frm="ngForm" [formGroup]="frmGroup" (ngSubmit)="frm.valid && onSubmit()">
+    <div class="form-group">
+      <label for="">email</label>
+      <input type="email" class="form-control" formControlName="email" [ngClass]="{ 'invalid': frm.submitted && f.email.errors }">
+    </div>
+
+    <div class="form-group">
+      <label >password</label>
+      <input type="password" class="form-control" formControlName="password" [ngClass]="{ 'invalid': frm.submitted && f.email.errors }">
+    </div>
+
+    <button class="btn btn-primary">login</button>
+  </form>
+</section>

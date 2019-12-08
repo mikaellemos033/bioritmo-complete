@@ -1,0 +1,10 @@
+<section class="container">
+  <a href="javascript:;" (click)="logout()">logout</a>
+  <shared-search-city (city)="addCity($event)"></shared-search-city>
+  <div class="container">
+    <div class="box-cities">
+        <shared-city-card (deleted)="remove($event)" *ngFor="let city of cities" [city]="city"></shared-city-card>
+    </div>    
+  </div>
+</section>
+
