@@ -43,4 +43,5 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  ENV['DEVISE_JWT_SECRET_KEY'] = '084e8ece4ccd4fe00c8adfd01e0c25059dd6cb6c4c39ad7d97aa85f5a0d9634fc0fab7dea74d2e92861e33dcce814990bfb4296d4cc2e2aee4eb14042054be48'
 end

@@ -91,4 +91,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  ENV['DEVISE_JWT_SECRET_KEY'] = 'bd1b44dba36820893b560f800d3610a69bba435014ca69c08ee23bd16cde7097134e405a39f66c1bf6755c9c58a84e410f8f2cd2bdbe9626b9e102966acff765'
 end
