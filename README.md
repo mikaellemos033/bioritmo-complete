@@ -6,4 +6,7 @@ para executar o programa utilize
   docker-compose up --build
 ```
 
-Acesse em http://localhost:4000
+## Acesse em http://localhost:4000
+
+email: admin@bioritmo.com
+password: 123456
